@@ -1,0 +1,108 @@
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222222;
+  color: #fff;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  justify-content: end;
+  padding-right: 5rem;
+}
+
+header nav ul li:hover {
+  color: #fd7e14;
+  font-weight: bolder;
+}
+
+section {
+  text-align: center;
+  min-height: 20rem;
+}
+
+h2 {
+  margin: 2rem 0;
+}
+
+#about {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/header-bg.jpg);
+  background-size: cover;
+  height: auto;
+  margin-top: 3rem;
+}
+
+#about > * {
+  color: #fd7e14;
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+
+#skills,
+#projects {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#skills h2,
+#projects h2 {
+  color: #fd7e14;
+  font-size: 2rem;
+}
+
+.skills-container,
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+  margin: 1rem;
+}
+
+#skills article svg {
+  color: #fd7e14;
+  width: 20rem;
+  height: 30rem;
+  margin: 1rem 2rem;
+}
+.projects-container article h3{
+  color: #fd7e14;
+ }
+
+footer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  height: 6rem;
+}
+
+footer div address {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
